@@ -1,2 +1,2 @@
-# web-practice
-学习web过程的练习。。
+web-practice
+学习web的练习过程。

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/login.css" />
+
+	<body>
+		<!-- Top content -->
+		<div class="top-content">
+
+			<div class="login-box">
+
+				<div class="row">
+					<div class="col-sm-12 form-box">
+						<div class="form-top">
+							<ul id="mytabs" class="nav nav-tabs" role="tablist">
+								<li class="active">
+									<a href="#login">登录</a>
+								</li>
+								<li>
+									<a href="#register" type="button">注册</a>
+								</li>
+								<li>
+									<a href="#findback">找回密码</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="form-bottom">
+
+							<div class="tab-content">
+								<input type="hidden" class="valid" />
+								<div class="alert alert-danger alert-dismissible valid message" role="alert">
+									<button class="close" type="button" data-dismiss="alert" aria-label="close"><span aria-hidden="true">&times;</span></button>
+									<p></p>
+								</div>
+								<!--登陆面板-->
+								<div class="tab-pane active" id="login" role="tabpanel">
+									<form role="form" action="" method="post" class="login-form">
+										<div class="form-group">
+
+											<div class="input-group">
+												<label class="sr-only" for="form-username">Username</label>
+												<div class="input-group-addon">
+													<span class="glyphicon glyphicon-user"></span>
+												</div>
+												<input type="text" name="emp_name" placeholder="Username..." class="form-username form-control" id="form-username" required>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="input-group">
+												<div class="input-group-addon">
+													<span class="glyphicon glyphicon-lock"></span>
+												</div>
+												<label class="sr-only" for="form-password">Password</label>
+												<input type="password" name="emp_password" placeholder="Password..." class="form-password form-control" id="form-password" required>
+											</div>
+										</div>
+										<button type="submit" class="btn btn-primary">登录</button>
+									</form>
+								</div>
+
+								<!--注册面板-->
+								<div class="tab-pane" id="register" role="tabpanel">
+									<form role="form" action="" method="post" class="login-form">
+										<div class="form-group">
+
+											<div class="input-group">
+												<label class="sr-only" for="form-username">Username</label>
+												<div class="input-group-addon">
+													<span class="glyphicon glyphicon-user"></span>
+												</div>
+												<input type="text" name="emp_name" placeholder="用户名..." class="form-username form-control">
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="input-group">
+												<div class="input-group-addon">
+													<span class="glyphicon glyphicon-lock"></span>
+												</div>
+												<label class="sr-only" for="form-password">Password</label>
+												<input type="password" name="emp_password" placeholder="密码...（6到15个字符)" class="form-password form-control">
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="input-group">
+												<div class="input-group-addon">
+													<span class="glyphicon glyphicon-lock"></span>
+												</div>
+												<label class="sr-only" for="form-password">Password</label>
+												<input type="password" name="emp_password" placeholder="确认密码" class="form-password form-control">
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="input-group">
+												<div class="input-group-addon">
+													<span class="glyphicon glyphicon-envelope"></span>
+												</div>
+												<label class="sr-only" for="form-password">Password</label>
+												<input type="email" name="form-password" placeholder="邮箱地址" class="form-email form-control">
+											</div>
+										</div>
+
+										<button type="submit" class="btn btn-primary" disabled>立即注册</button>
+								</div>
+
+								<!--找回密码面板-->
+								<div class="tab-pane" id="findback" role="tabpanel">
+									<form action="" method="post" id="auth">
+										<div class="form-group">
+											<div class="input-group">
+												<div class="input-group-addon">
+													<span class="glyphicon glyphicon-envelope"></span>
+												</div>
+												<label class="sr-only">email</label>
+												<input type="email" name="form-email" placeholder="邮箱地址" class="form-email form-control">
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="input-group">
+												<div class="input-group-addon">
+													<span class="glyphicon glyphicon-check"></span>
+												</div>
+												<label class="sr-only">Password</label>
+												<input type="text" name="form-auth" placeholder="验证码" class="form-auth form-control">
+											</div>
+										</div>
+									</form>
+									
+								<form action="" method="post" id="modify-pass">
+										<div class="form-group">
+											<div class="input-group">
+												<div class="input-group-addon">
+													<span class="glyphicon glyphicon-lock"></span>
+												</div>
+												<label class="sr-only" for="form-password">Password</label>
+												<input type="password" name="emp_password" placeholder="新密码...（6到15个字符)" class="form-password form-control">
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="input-group">
+												<div class="input-group-addon">
+													<span class="glyphicon glyphicon-lock"></span>
+												</div>
+												<label class="sr-only">Password</label>
+												<input type="password" name="emp_password" placeholder="确认新密码" class="form-password form-control">
+											</div>
+										</div>
+
+										<div class="form-group">
+											<button type="submit" form="auth" class="btn btn-primary auth">获取验证码</button>
+											<button type="submit" form="modify-pass" class="btn btn-primary modify-pass">修改密码</button>
+										</div>
+									</form>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script>
+			/*
+			 * 导航面板切换
+			 */
+			$('#mytabs a').click(function(e) {
+				e.preventDefault();
+				$(this).tab('show');
+			});
+
+			/*
+			 * 判断是否出错，弹出警告框
+			 */
+			function check() {
+				var result = $('[type="hidden"]').val();
+				if(!result) {
+					$('.valid.message').hide();
+				} else {
+					$('p', '.valid.message').text(result);
+					$('.valid.message').show();
+				}
+			}
+			check();
+			/*
+			 * 判断密码是否符合要求，及前后一致
+			 */
+			var passValid = function(id) {
+				
+				var passTest = function() {
+					var $p = $('.form-password', id);
+					if($p.val().length < 6 || $p.val().length > 15) {
+						$('[type="hidden"]').val("密码长度不对");
+						$('[type="submit"]', '#register').attr('disabled', true);
+						return false;
+					}
+					if($p.get(0).value != $p.get(1).value) {
+						$('[type="hidden"]').val("密码不一致");
+						$('[type="submit"]', '#register').attr('disabled', true);
+						return false;
+					}
+					return true;
+				}
+				
+				$('.form-password', id).on('blur', function() {
+				$('[type="hidden"]').val("");
+				if(passTest(id)) {
+					$('[type="submit"]', id).removeAttr('disabled');
+				}
+				check();
+			});
+			}
+			
+			passValid('#register');
+			passValid('#findback');
+			
+			/*
+			 * 验证码倒计时
+			 */
+			$('.auth', '#findback').click(function() {
+				var second = 60;
+				$(this).attr('disabled', true);
+				var that = this;
+				
+				function countdown() {
+					that.innerHTML = '有效时间' + second;
+					second--;
+				}
+				
+				var interval = setInterval(countdown, 1000);
+				setTimeout(function() {
+					clearInterval(interval)
+					that.innerHTML = '获取验证码';
+				}, 10000);
+				
+			});
+		
+			$('button', '#login').click(function() {
+				
+			})
+		</script>
+	</body>
+
+</html>
+

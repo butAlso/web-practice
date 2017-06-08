@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+
+	</head>
+
+	<body>
+		<!--导航栏-->
+		<nav class="container-fluid">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapse" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">导航触发</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand logo" href="#">
+							<img src="image/logo.png" />
+						</a>
+
+					</div>
+
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
+							<li class="active">
+								<a href="#">课程</a>
+							</li>
+							<li>
+								<a href="#">问答</a>
+							</li>
+							<li>
+								<a href="#">***</a>
+							</li>
+							<li>
+								<a href="#">***</a>
+							</li>
+							<li>
+								<a href="#">***</a>
+							</li>
+						</ul>
+
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="login.html" id="index-login" data-toggle="modal" data-target="#to-login">登录/注册</a>
+							</li>
+						</ul>
+
+						<form class="navbar-form navbar-right" role="search">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search">
+								<span class="input-group-btn">
+									<button class="btn btn-info btn-search">
+										<span class="glyphicon glyphicon-search"></span>
+								</button>
+								</span>
+							</div>
+						</form>
+					</div>
+
+				</div>
+			</nav>
+		</nav>
+
+		<div class="modal fade" id="tologin" tabindex="-1" role="dialog" aria-labelledby="loginLabel">
+			<div class="modal-dialog" role="document" width="75%">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						
+					</div>
+					<div class="modal-body">
+						
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="project">
+				<ul class="nav">
+					<li role="presentation" data-target="fe">
+						<a href="#">前端开发<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+					</li>
+					<li role="presentation" data-target="be">
+						<a href="#">后端开发<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+					</li>
+					<li role="presentation" data-target="mobile">
+						<a href="#">移动开发<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+					</li>
+					<li role="presentation" data-target="sql">
+						<a href="#">数据库<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+					</li>
+					<li role="presentation" data-target='csql'>
+						<a href="#">云计算/大数据<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+					</li>
+					<li role="presentation" data-target="operation">
+						<a href="#">运维/设计<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+					</li>
+					<li role="presentation" data-target="ui">
+						<a href="#">UI设计<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+					</li>
+				</ul>
+			</div>
+
+				<div id="fe" class="project-details" hidden>
+						<h2>分类目录</h2>
+						<nav>
+							<ul class="list-inline">
+								<label>基础：</label>
+								<li>
+									<a href="#">HTML/CSS</a>
+								</li>
+								/
+								<li>
+									<a href="#">JavaScript</a>
+								</li>
+								/
+								<li>
+									<a href="#">Jqury</a>
+								</li>
+							</ul>
+
+							<ul class="list-inline">
+								<label>进阶：</label>
+								<li>
+									<a href="#">HTML5</a>
+								</li>
+								/
+								<li>
+									<a href="#">CSS3</a>
+								</li>
+								/
+								<li>
+									<a href="#">BootStrap3</a>
+								</li>
+								/
+								<li>
+									<a href="#">AngleJs</a>
+								</li>
+							</ul>
+
+							<ul class="list-inline">
+								<label>其他：</label>
+								<li>
+									<a href="#">课外书</a>
+								</li>
+								/
+								<li>
+									<a href="#">前端工具</a>
+								</li>
+
+							</ul>
+						</nav>
+
+						<nav>
+							<h2>课程推荐</h2>
+							<ul class="list-group">
+								<li><label class="label label-info">职业路径</label>
+									<a>Android从界面到存储</a>
+								</li>
+								<li><label class="label label-info">职业路径</label>
+									<a>HTML与CSS3实战</a>
+								</li>
+								<li><label class="label label-default">实战</label>
+									<a>Vue2.0实战</a>
+								</li>
+							</ul>
+						</nav>
+				</div>
+
+				<div id="be" class="project-details" hidden>
+						<h2>分类目录</h2>
+						<nav>
+							<ul class="list-inline">
+								<label>基础：</label>
+								<li>
+									<a href="#">PHP</a>
+								</li>
+								/
+								<li>
+									<a href="#">Python</a>
+								</li>
+								/
+								<li>
+									<a href="#">Ruby</a>
+								</li>
+							</ul>
+
+							<ul class="list-inline">
+								<label>进阶：</label>
+								<li>
+									<a href="#">C</a>
+								</li>
+								/
+								<li>
+									<a href="#">C#</a>
+								</li>
+								/
+								<li>
+									<a href="#">C++</a>
+								</li>
+								/
+								<li>
+									<a href="#">Java</a>
+								</li>
+							</ul>
+
+							<ul class="list-inline">
+								<label>其他：</label>
+								<li>
+									<a href="#">课外书</a>
+								</li>
+								/
+								<li>
+									<a href="#">后端工具</a>
+								</li>
+
+							</ul>
+						</nav>
+
+						<nav>
+							<h2>课程推荐</h2>
+							<ul class="list-group">
+								<li><label class="label label-info">职业路径</label>
+									<a>Spring MVC商业实战</a>
+								</li>
+								<li><label class="label label-info">职业路径</label>
+									<a>HTML与CSS3实战</a>
+								</li>
+								<li><label class="label label-default">实战</label>
+									<a>Vue2.0实战</a>
+								</li>
+							</ul>
+						</nav>
+				</div>
+
+				<div id="mobile" class="project-details" hidden>
+						<h2>分类目录</h2>
+						<nav>
+							<ul class="list-inline">
+								<label>基础：</label>
+								<li>
+									<a href="#">PHP</a>
+								</li>
+								/
+								<li>
+									<a href="#">Python</a>
+								</li>
+								/
+								<li>
+									<a href="#">Ruby</a>
+								</li>
+							</ul>
+
+							<ul class="list-inline">
+								<label>进阶：</label>
+								<li>
+									<a href="#">C</a>
+								</li>
+								/
+								<li>
+									<a href="#">C#</a>
+								</li>
+								/
+								<li>
+									<a href="#">C++</a>
+								</li>
+								/
+								<li>
+									<a href="#">Java</a>
+								</li>
+							</ul>
+
+							<ul class="list-inline">
+								<label>其他：</label>
+								<li>
+									<a href="#">课外书</a>
+								</li>
+								/
+								<li>
+									<a href="#">后端工具</a>
+								</li>
+
+							</ul>
+						</nav>
+
+						<nav>
+							<h2>课程推荐</h2>
+							<ul class="list-group">
+								<li><label class="label label-info">职业路径</label>
+									<a>Spring MVC商业实战</a>
+								</li>
+								<li><label class="label label-info">职业路径</label>
+									<a>HTML与CSS3实战</a>
+								</li>
+								<li><label class="label label-default">实战</label>
+									<a>Vue2.0实战</a>
+								</li>
+							</ul>
+						</nav>
+				</div>
+
+				<div id="sql" class="project-details" hidden>
+						<h2>分类目录</h2>
+						<nav>
+							<ul class="list-inline">
+								<label>基础：</label>
+								<li>
+									<a href="#">PHP</a>
+								</li>
+								/
+								<li>
+									<a href="#">Python</a>
+								</li>
+								/
+								<li>
+									<a href="#">Ruby</a>
+								</li>
+							</ul>
+
+							<ul class="list-inline">
+								<label>进阶：</label>
+								<li>
+									<a href="#">C</a>
+								</li>
+								/
+								<li>
+									<a href="#">C#</a>
+								</li>
+								/
+								<li>
+									<a href="#">C++</a>
+								</li>
+								/
+								<li>
+									<a href="#">Java</a>
+								</li>
+							</ul>
+
+							<ul class="list-inline">
+								<label>其他：</label>
+								<li>
+									<a href="#">课外书</a>
+								</li>
+								/
+								<li>
+									<a href="#">后端工具</a>
+								</li>
+
+							</ul>
+						</nav>
+
+						<nav>
+							<h2>课程推荐</h2>
+							<ul class="list-group">
+								<li><label class="label label-info">职业路径</label>
+									<a>Spring MVC商业实战</a>
+								</li>
+								<li><label class="label label-info">职业路径</label>
+									<a>HTML与CSS3实战</a>
+								</li>
+								<li><label class="label label-default">实战</label>
+									<a>Vue2.0实战</a>
+								</li>
+							</ul>
+						</nav>
+				</div>
+
+				<div id="csql" class="project-details" hidden>
+						<h2>分类目录</h2>
+						<nav>
+							<ul class="list-inline">
+								<label>基础：</label>
+								<li>
+									<a href="#">PHP</a>
+								</li>
+								/
+								<li>
+									<a href="#">Python</a>
+								</li>
+								/
+								<li>
+									<a href="#">Ruby</a>
+								</li>
+							</ul>
+
+							<ul class="list-inline">
+								<label>进阶：</label>
+								<li>
+									<a href="#">C</a>
+								</li>
+								/
+								<li>
+									<a href="#">C#</a>
+								</li>
+								/
+								<li>
+									<a href="#">C++</a>
+								</li>
+								/
+								<li>
+									<a href="#">Java</a>
+								</li>
+							</ul>
+
+							<ul class="list-inline">
+								<label>其他：</label>
+								<li>
+									<a href="#">课外书</a>
+								</li>
+								/
+								<li>
+									<a href="#">后端工具</a>
+								</li>
+
+							</ul>
+						</nav>
+
+						<nav>
+							<h2>课程推荐</h2>
+							<ul class="list-group">
+								<li><label class="label label-info">职业路径</label>
+									<a>Spring MVC商业实战</a>
+								</li>
+								<li><label class="label label-info">职业路径</label>
+									<a>HTML与CSS3实战</a>
+								</li>
+								<li><label class="label label-default">实战</label>
+									<a>Vue2.0实战</a>
+								</li>
+							</ul>
+						</nav>
+				</div>
+
+				<div id="operation" class="project-details" hidden>
+						<h2>分类目录</h2>
+						<nav>
+							<ul class="list-inline">
+								<label>基础：</label>
+								<li>
+									<a href="#">PHP</a>
+								</li>
+								/
+								<li>
+									<a href="#">Python</a>
+								</li>
+								/
+								<li>
+									<a href="#">Ruby</a>
+								</li>
+							</ul>
+
+							<ul class="list-inline">
+								<label>进阶：</label>
+								<li>
+									<a href="#">C</a>
+								</li>
+								/
+								<li>
+									<a href="#">C#</a>
+								</li>
+								/
+								<li>
+									<a href="#">C++</a>
+								</li>
+								/
+								<li>
+									<a href="#">Java</a>
+								</li>
+							</ul>
+
+							<ul class="list-inline">
+								<label>其他：</label>
+								<li>
+									<a href="#">课外书</a>
+								</li>
+								/
+								<li>
+									<a href="#">后端工具</a>
+								</li>
+
+							</ul>
+						</nav>
+
+						<nav>
+							<h2>课程推荐</h2>
+							<ul class="list-group">
+								<li><label class="label label-info">职业路径</label>
+									<a>Spring MVC商业实战</a>
+								</li>
+								<li><label class="label label-info">职业路径</label>
+									<a>HTML与CSS3实战</a>
+								</li>
+								<li><label class="label label-default">实战</label>
+									<a>Vue2.0实战</a>
+								</li>
+							</ul>
+						</nav>
+				</div>
+
+				<div id="ui" class="project-details" hidden>
+						<h2>分类目录</h2>
+						<nav>
+							<ul class="list-inline">
+								<label>基础：</label>
+								<li>
+									<a href="#">PHP</a>
+								</li>
+								/
+								<li>
+									<a href="#">Python</a>
+								</li>
+								/
+								<li>
+									<a href="#">Ruby</a>
+								</li>
+							</ul>
+
+							<ul class="list-inline">
+								<label>进阶：</label>
+								<li>
+									<a href="#">C</a>
+								</li>
+								/
+								<li>
+									<a href="#">C#</a>
+								</li>
+								/
+								<li>
+									<a href="#">C++</a>
+								</li>
+								/
+								<li>
+									<a href="#">Java</a>
+								</li>
+							</ul>
+
+							<ul class="list-inline">
+								<label>其他：</label>
+								<li>
+									<a href="#">课外书</a>
+								</li>
+								/
+								<li>
+									<a href="#">后端工具</a>
+								</li>
+
+							</ul>
+						</nav>
+
+						<nav>
+							<h2>课程推荐</h2>
+							<ul class="list-group">
+								<li><label class="label label-info">职业路径</label>
+									<a>Spring MVC商业实战</a>
+								</li>
+								<li><label class="label label-info">职业路径</label>
+									<a>HTML与CSS3实战</a>
+								</li>
+								<li><label class="label label-default">实战</label>
+									<a>Vue2.0实战</a>
+								</li>
+							</ul>
+						</nav>
+				</div>
+				
+				
+			
+			
+		</div>
+		<div class="container">
+				<div id="carousel" class="carousel slide">
+					<!--Indicators-->
+					<ol class="carousel-indicators">
+						<li data-target="#carousel" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel" data-slide-to="1"></li>
+						<li data-target="#carousel" data-slide-to="2"></li>
+					</ol>
+				
+
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="image/5922c63a00017a3e12000460.jpg" />
+						<div class="carousel-caption">
+							<h2>Welcome</h2>
+							<p>***</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="image/5929440b00011a8f12000460.jpg" />
+						<div class="carousel-caption">
+							<h2>Welcome</h2>
+							<p>***</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="image/592b9dcf0001bcb512000460.jpg" />
+						<div class="carousel-caption">
+							<h2>Welcome</h2>
+							<p>***</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Controls -->
+				<a class="col-sm-offset-2 carousel-control" href="#carousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			</div>
+		<div class="container">
+			<div class="course-main">
+				<div class="course-content">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h2>推荐课程</h2>
+							<a href="#" class="pull-right">更多>></a>
+						</div>
+						<div class="panel-body">
+							<ul class="nature-grids">
+								<li>
+									<div class="nature-course-grid">
+										<div class="course-picture">
+											<a href="#">
+												<img src="image/DEMOYANSHIKECHENG.jpg" title="学习平台演示课程" />
+												<h3></h3>
+											</a>
+										</div>
+										<p class="nature-default-course-tip">团队激励系列之七：访谈橡皮员工技巧，了解橡皮员工产生的原因，从体制上给...</p>
+										<p class="meta">
+											<span class="glyphicon glyphicon-user"></span>
+
+											<span class="review-rating pull-right">
+											<span class="stars stars-1"></span>
+											<span class="pull-right"><span class="mete-label" name="4"></span>评价</span>
+											</span>
+										</p>
+										<p class="teacher">
+											<span>讲师：陈飞</span>
+											<a class="pull-right" href="#">简介</a>
+										</p>
+									</div>
+
+								</li>
+
+								<li>
+									<div class="nature-course-grid">
+										<div class="course-picture">
+											<a href="#">
+												<img src="image/BULINZANMEITONGSHI.jpg" title="不吝赞美同事" />
+												<h3></h3>
+											</a>
+										</div>
+										<p class="nature-default-course-tip">要获得良好的办公室人缘，发现赞美别人的长处必不可少，做一个受大家欢迎的人</p>
+										<p class="meta">
+											<span class="glyphicon glyphicon-user"></span>
+
+											<span class="review-rating pull-right">
+											<span class="stars stars-2"></span>
+											<span class="pull-right"><span class="mete-label" name="5"></span>评价</span>
+											</span>
+										</p>
+										<p class="teacher">
+											<span>讲师：金培源</span>
+											<a class="pull-right" href="#">简介</a>
+										</p>
+									</div>
+
+								</li>
+								
+								<li>
+									<div class="nature-course-grid">
+										<div class="course-picture">
+											<a href="#">
+												<img src="image/YONGHUSHIYONGZHIDAO.jpg" title="LMS操作指南" />
+												<h3></h3>
+											</a>
+										</div>
+										<p class="nature-default-course-tip">LMS企业版是专门为企业实施网络学习（e-Learning）而打造的网络培训和知...</p>
+										<p class="meta">
+											<span class="glyphicon glyphicon-user"></span>
+
+											<span class="review-rating pull-right">
+											<span class="stars stars-4"></span>
+											<span class="pull-right"><span class="mete-label" name="8"></span>评价</span>
+											</span>
+										</p>
+										<p class="teacher">
+											<span>讲师：汪烨晴</span>
+											<a class="pull-right" href="#">简介</a>
+										</p>
+									</div>
+
+								</li>
+								
+								<li>
+									<div class="nature-course-grid">
+										<div class="course-picture">
+											<a href="#">
+												<img src="image/DANG90HOUYUDAO60HOU.jpg" title="当90后遇到60后" />
+												<h3></h3>
+											</a>
+										</div>
+										<p class="nature-default-course-tip">同事之间要融洽相处，求同存异的沟通很重要，尊重他人才能赢得尊重</p>
+										<p class="meta">
+											<span class="glyphicon glyphicon-user"></span>
+
+											<span class="review-rating pull-right">
+											<span class="stars stars-5"></span>
+											<span class="pull-right"><span class="mete-label" name="4"></span>评价</span>
+											</span>
+										</p>
+										<p class="teacher">
+											<span>讲师：韩佳亮</span>
+											<a class="pull-right" href="#">简介</a>
+										</p>
+									</div>
+
+								</li>
+
+							</ul>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<div class="container">
+			<div class="course-main">
+				<div class="course-content">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h2>推荐课程</h2>
+							<a href="#" class="pull-right">更多>></a>
+						</div>
+						<div class="panel-body">
+							<ul class="nature-grids">
+								<li>
+									<div class="nature-course-grid">
+										<div class="course-picture">
+											<a href="#">
+												<img src="image/DEMOYANSHIKECHENG.jpg" title="学习平台演示课程" />
+												<h3></h3>
+											</a>
+										</div>
+										<p class="nature-default-course-tip">团队激励系列之七：访谈橡皮员工技巧，了解橡皮员工产生的原因，从体制上给...</p>
+										<p class="meta">
+											<span class="glyphicon glyphicon-user"></span>
+
+											<span class="review-rating pull-right">
+											<span class="stars stars-1"></span>
+											<span class="pull-right"><span class="mete-label" name="4"></span>评价</span>
+											</span>
+										</p>
+										<p class="teacher">
+											<span>讲师：陈飞</span>
+											<a class="pull-right" href="#">简介</a>
+										</p>
+									</div>
+
+								</li>
+
+								<li>
+									<div class="nature-course-grid">
+										<div class="course-picture">
+											<a href="#">
+												<img src="image/BULINZANMEITONGSHI.jpg" title="不吝赞美同事" />
+												<h3></h3>
+											</a>
+										</div>
+										<p class="nature-default-course-tip">要获得良好的办公室人缘，发现赞美别人的长处必不可少，做一个受大家欢迎的人</p>
+										<p class="meta">
+											<span class="glyphicon glyphicon-user"></span>
+
+											<span class="review-rating pull-right">
+											<span class="stars stars-2"></span>
+											<span class="pull-right"><span class="mete-label" name="5"></span>评价</span>
+											</span>
+										</p>
+										<p class="teacher">
+											<span>讲师：金培源</span>
+											<a class="pull-right" href="#">简介</a>
+										</p>
+									</div>
+
+								</li>
+								
+								<li>
+									<div class="nature-course-grid">
+										<div class="course-picture">
+											<a href="#">
+												<img src="image/YONGHUSHIYONGZHIDAO.jpg" title="LMS操作指南" />
+												<h3></h3>
+											</a>
+										</div>
+										<p class="nature-default-course-tip">LMS企业版是专门为企业实施网络学习（e-Learning）而打造的网络培训和知...</p>
+										<p class="meta">
+											<span class="glyphicon glyphicon-user"></span>
+
+											<span class="review-rating pull-right">
+											<span class="stars stars-4"></span>
+											<span class="pull-right"><span class="mete-label" name="8"></span>评价</span>
+											</span>
+										</p>
+										<p class="teacher">
+											<span>讲师：汪烨晴</span>
+											<a class="pull-right" href="#">简介</a>
+										</p>
+									</div>
+
+								</li>
+								
+								<li>
+									<div class="nature-course-grid">
+										<div class="course-picture">
+											<a href="#">
+												<img src="image/DANG90HOUYUDAO60HOU.jpg" title="当90后遇到60后" />
+												<h3></h3>
+											</a>
+										</div>
+										<p class="nature-default-course-tip">同事之间要融洽相处，求同存异的沟通很重要，尊重他人才能赢得尊重</p>
+										<p class="meta">
+											<span class="glyphicon glyphicon-user"></span>
+
+											<span class="review-rating pull-right">
+											<span class="stars stars-5"></span>
+											<span class="pull-right"><span class="mete-label" name="4"></span>评价</span>
+											</span>
+										</p>
+										<p class="teacher">
+											<span>讲师：韩佳亮</span>
+											<a class="pull-right" href="#">简介</a>
+										</p>
+									</div>
+
+								</li>
+
+							</ul>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script>
+			/*
+			 * 弹出登陆窗口
+			 */
+			$('#index-login', 'nav').on('click', function() {
+				$('#tologin').modal({
+				remote: 'login.html',
+			});
+			});
+			
+			/*
+			 * 导航课程分类背景图片
+			 */
+			(function () {
+				var $pd = $(".project-details");
+				$pd.each(function() {
+					var id = $(this).attr('id');
+					var bg = "url(image/" + id + "-bg.png)";
+					$(this).css("background-image", bg);
+				})
+			})();
+			
+			/*
+			 * 显示课程分类面板
+			 */
+			$('li', '.container').on('mouseover', function() {
+				var target = '#' + $(this).attr("data-target");
+				$(target).show();
+			});
+			
+			$('.project-details').on('mouseover', function() {
+				$(this).show();
+			});
+			
+			/*
+			 * 关闭课程分类面板
+			 */
+			$('li', ".container").on('mouseleave', function() {
+				var target = '#' + $(this).attr("data-target");
+				$(target).hide();
+			});
+			
+			$('.project-details').on('mouseleave', function() {
+				$(this).hide();
+			});
+			
+				/*
+			 * 给课程加上评价人数
+			 */
+			(function() {
+				var $person = $('.mete-label', '.meta');
+				$person.each(function() {
+					$(this).text($(this).attr('name'));
+				});
+			})();
+
+			/*
+			 * 给课程图片加上标题
+			 */
+			$('a', '.nature-course-grid').each(function() {
+				var title = $('img',$(this)).attr('title');
+				$('h3', $(this)).text(title);
+			});
+			
+			/*
+			 * 课程图片，鼠标经过放大
+			 */
+			var interval;
+			$('img', '.course-picture').on('mouseover', function() {
+				var r = 1;
+				var width = $(this).css('width');
+				var w = +width.replace('px', '');
+				var that = this;
+				interval = setInterval(function() {
+					w = w + r;
+					$(that).css('width', w + 'px');
+				}, 100);
+				setTimeout(function() {
+					clearInterval(interval)
+				}, 500);
+			})
+			
+			/*
+			 * 课程图片鼠标离开恢复原样
+			 */
+			$('img', '.course-picture').on('mouseleave', function() {
+				clearInterval(interval);
+				$(this).css("width", "16.9285em");
+			})
+			
+		</script>
+	</body>
+
+</html>
